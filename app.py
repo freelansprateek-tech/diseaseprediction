@@ -696,6 +696,29 @@ elif page == "ℹ️ About":
         st.info("🤝 Contribute")
 
 st.sidebar.markdown("---")
+st.sidebar.markdown("### 🩺 Additional Tools")
+
+# Symptoms Checkup Button
+st.sidebar.markdown("""
+    <a href="https://health-checkup-rust.vercel.app/" target="_blank">
+        <button style="
+            background-color: #FF4B4B;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            font-weight: bold;
+            margin-bottom: 10px;
+        ">
+            🔍 Symptoms Checkup
+        </button>
+    </a>
+""", unsafe_allow_html=True)
+
+st.sidebar.markdown("---")
 st.sidebar.markdown("### 📊 Quick Stats")
 st.sidebar.metric("Total Predictions", st.session_state.prediction_count)
 
