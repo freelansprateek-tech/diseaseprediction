@@ -7,7 +7,7 @@ from datetime import datetime
 import json
 
 st.set_page_config(
-    page_title="Multi-Disease Predictor",
+    page_title="Multi-Disease Predictorr",
     page_icon="🏥",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -80,7 +80,7 @@ if 'prediction_count' not in st.session_state:
 if 'last_predictions' not in st.session_state:
     st.session_state.last_predictions = []
 
-st.sidebar.title("🏥 Navigation")
+st.sidebar.title("🏥 Navi")
 page = st.sidebar.radio(
     "Go to",
     ["🏠 Home", "🩺 Diabetes Prediction", "❤️ Heart Disease Prediction", 
@@ -88,7 +88,7 @@ page = st.sidebar.radio(
 )
 
 if page == "🏠 Home":
-    st.title("🏥 Multi-Disease Prediction System")
+    st.title("🏥 Multi-Disease Predictionn System")
     st.markdown("---")
     
     st.markdown("""
