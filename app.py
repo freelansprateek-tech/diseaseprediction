@@ -113,7 +113,7 @@ if page == "🏠 Home":
     metadata = load_metadata()
     
     with col1:
-        st.metric("Total Models Trained", "30", "10 per disease")
+        st.metric("Total Models Trained", "33", "11 per disease")
     
     with col2:
         if 'diabetes' in metadata:
@@ -608,6 +608,7 @@ elif page == "ℹ️ About":
     8. **Bagging** - Bootstrap aggregating
     9. **XGBoost** - Extreme gradient boosting
     10. **Voting Classifier** - Ensemble of multiple models
+    11. **Stacking Classifier** - Meta-learning ensemble model
     
     ### 🔬 Methodology
     

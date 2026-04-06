@@ -1,6 +1,6 @@
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, BaggingClassifier, VotingClassifier
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, BaggingClassifier, VotingClassifier, StackingClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
@@ -26,7 +26,17 @@ def get_classifiers():
                 ('lr', LogisticRegression(max_iter=1000, random_state=42))
             ],
             voting='soft'
-        )
+        ),
+        'Stacking': StackingClassifier(
+                    estimators=[
+        ('rf', RandomForestClassifier(n_estimators=50, random_state=42)),
+        ('xgb', XGBClassifier(n_estimators=50, random_state=42, eval_metric='logloss')),
+        ('knn', KNeighborsClassifier(n_neighbors=5)),
+        ('nb', GaussianNB())
+    ],
+    final_estimator=LogisticRegression(max_iter=1000, random_state=42),
+    cv=5
+)
     }
 
 def train_all_models(X_train, X_test, y_train, y_test):
