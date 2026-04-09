@@ -19,7 +19,7 @@
     ],
     "n_features": 8,
     "n_samples": 768,
-    "trained_at": "2026-04-07T01:37:49.448842",
+    "trained_at": "2026-04-10T00:22:30.471146",
     "all_models": {
       "Logistic Regression": {
         "accuracy": 0.7395833333333334,
@@ -125,7 +125,7 @@
     ],
     "n_features": 13,
     "n_samples": 303,
-    "trained_at": "2026-04-07T01:37:53.856647",
+    "trained_at": "2026-04-10T00:22:34.605654",
     "all_models": {
       "Logistic Regression": {
         "accuracy": 0.7631578947368421,
@@ -240,7 +240,7 @@
     ],
     "n_features": 22,
     "n_samples": 195,
-    "trained_at": "2026-04-07T01:37:58.313148",
+    "trained_at": "2026-04-10T00:22:39.162049",
     "all_models": {
       "Logistic Regression": {
         "accuracy": 0.7959183673469388,
@@ -321,3 +321,4 @@
       }
     }
   }
+}
